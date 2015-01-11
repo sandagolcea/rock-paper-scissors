@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>RPS</title>
-</head>
-<body>
+
+<section class="index">
   <%if !@player%>
     <p>Hello, what's your name?</p>
 
@@ -18,22 +13,18 @@
     <p>Hello <%=@player%>, would you like to play a game?</p>
     <p>Choose your destiny!</p>
     
-    <table style="width:80%">
+    <table>
+    <!-- <table class='choice_table' align="center"> -->
     <ul>
     
     <td>
-      <th><img src='/images/rock.jpg' style="width:304px;height:228px"/></th>
-      <th><img src='/images/paper.jpg' style="width:304px;height:228px"/></th>
-      <th><img src='/images/scissors.jpg' style="width:304px;height:228px"/></th>
+      <th><img src='/images/rock.jpg'/></th>
+      <th><img src='/images/paper.jpg'/></th>
+      <th><img src='/images/scissors.jpg'/></th>
     </td>
 
     </ul>
     </table>
 
-    <!-- <form method='post' action='game'> -->
-
-    <!-- </form> -->
   <%end%>
-
-</body>
-</html>
+</section>
