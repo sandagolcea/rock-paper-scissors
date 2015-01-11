@@ -1,8 +1,15 @@
 require 'sinatra/base'
 
 class RPS < Sinatra::Base
+  # set :views, Proc.new { File.join(root, "..", "views") }
+
   get '/' do
-    'Hello RPS!'
+    erb :index
+  end
+
+  post '/' do
+    @player = params[:player]
+    erb :index
   end
 
   # start the server if ruby file executed directly

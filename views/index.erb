@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RPS</title>
+</head>
+<body>
+  <%if !@player%>
+    <p>Hello, what's your name?</p>
+
+    <form method='post' action='/'>
+      <input type="text" name="player">
+      <input type="submit">
+    </form>
+  <%end%>
+
+  <%if @player%>
+    <p>Hello <%=@player%>, would you like to play a game?</p>
+    <p>Choose your destiny!</p>
+    
+    <table style="width:80%">
+    <ul>
+    
+    <td>
+      <th><img src='/images/rock.jpg' style="width:304px;height:228px"/></th>
+      <th><img src='/images/paper.jpg' style="width:304px;height:228px"/></th>
+      <th><img src='/images/scissors.jpg' style="width:304px;height:228px"/></th>
+    </td>
+
+    </ul>
+    </table>
+
+    <!-- <form method='post' action='game'> -->
+
+    <!-- </form> -->
+  <%end%>
+
+</body>
+</html>
