@@ -1,5 +1,5 @@
 
-Feature: Starting the game
+Feature: Playing the game
   In order to win rock paper scissors
   As a normal player
   I want to actually play the game

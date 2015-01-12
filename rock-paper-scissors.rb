@@ -5,10 +5,12 @@ class RPS < Sinatra::Base
   enable :sessions
 
   get '/' do
+    @player = session[:player] if session[:player]
     erb :index
   end
 
   post '/' do
+    puts params.inspect
     @player = params[:player]
     session[:player] = @player
     erb :index

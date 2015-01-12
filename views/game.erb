@@ -18,6 +18,10 @@
   <p><%=@result%></p>
 
   <br>
-  <a href="/"><input type="submit" value="New Game"></a>
+  <form method='post' action='/'>
+  <!-- <a href="/"><input type="submit" value="New Game"></a> -->
+    <input type="hidden" name="player" value="Henry">
+    <input type="submit" value="New Game">
+  </form>
 
 </section>
