@@ -1,8 +1,20 @@
 <section class="game">
+  
+  <table>  
 
-  <p>You chose <%=@choice%></p>
-  <p>The computer chose <%=@computer_choice%></p><br>
-  <p>Winner:</p>
+  <tr>
+    <td><p>You chose <%=@choice%></p></td>
+    <td><p>Computer chose <%=@computer_choice%></p></td>
+  </tr>
+  <tr>
+    <td><img class="result" src="/images/<%=@choice%>.jpg"></td>
+    <td><img class="result" src="/images/<%=@computer_choice%>.jpg"></td>
+  </tr>
+      
+  </table>
+  
+  <br>
+  <h3>Winner:</h3>
   <p><%=@result%></p>
 
 </section>

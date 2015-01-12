@@ -5,6 +5,7 @@ class RPS < Sinatra::Base
   enable :sessions
 
   get '/' do
+    # @player = session[:player] if session[:player]
     erb :index
   end
 
@@ -20,8 +21,8 @@ class RPS < Sinatra::Base
     @computer_choice = ["rock","paper","scissors"].sample
 
     if !@choice
-      # redirect back
-      redirect '/'
+      redirect back
+      # redirect "?player=#{@player}"
     end
 
     @result = if @computer_choice == @choice

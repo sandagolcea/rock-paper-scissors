@@ -1,7 +1,23 @@
+
+/**********************
+  Main text handling
+***********************/
 h1 {
   text-align: center;
 }
 
+.index {
+  text-align: center;
+}
+
+.game {
+  text-align: center;
+}
+
+
+/***********************
+  Picture handling
+***********************/
 img {
   width: 175px;
   height: 175px;
@@ -13,20 +29,20 @@ img {
   -webkit-border-radius: 50%;
 }
 
-img:hover {
+.choice:hover {
 
   width: 200px;
   height: 200px;
 }
 
-.index {
-  text-align: center;
+.result:hover {
+  width: 175px;
+  height: 175px;
 }
 
-.game {
-  text-align: center;
-}
-
+/***********************
+Table and other elements
+***********************/
 
 table {
   margin: 0 auto;
