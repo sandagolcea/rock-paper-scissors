@@ -12,7 +12,9 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
-
+    when /the game\s?page/
+      # TODO: change this from hardcoded
+      '/game?choice=rock'
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

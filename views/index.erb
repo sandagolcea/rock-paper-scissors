@@ -5,7 +5,7 @@
 
     <form method='post' action='/'>
       <input type="text" name="player">
-      <input type="submit">
+      <input type="submit" value="Submit">
     </form>
   <%else%>
     <p>Hello <%=@player%>, would you like to play a game?</p>
@@ -14,7 +14,7 @@
     <table>
     
     <td>
-      <th><a href="/game?choice=rock"><img class="choice" src='/images/rock.jpg'/></a></th>
+      <th><a href="/game?choice=rock"><img src='/images/rock.jpg' class="choice" /></a></th>
       <th><a href="/game?choice=paper"><img class="choice" src='/images/paper.jpg'/></a></th>
       <th><a href="/game?choice=scissors"><img class="choice" src='/images/scissors.jpg'/></a></th>
     </td>

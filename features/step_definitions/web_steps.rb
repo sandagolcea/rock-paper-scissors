@@ -217,3 +217,12 @@ end
 Then /^show me the page$/ do
   save_and_open_page
 end
+
+# *** My Image test *** 
+Then /^I should see the image "(.+)"$/ do |image|
+    page.should have_xpath("//img[@src=\"/images/#{image}\"]")
+end
+
+# Then /^I should see the image "(.+)"$/ do |image|  
+  # page.should have_xpath("//img[contains(@src, \"#{image}\")]")
+# end
